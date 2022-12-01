@@ -1,6 +1,6 @@
 :construction_worker: This README is still under construction, so for now it might be best to look at the smartCCTV noteboook. :construction_worker:
 
-:construction: You have been warned!:construction:
+:construction: You have been warned! :construction:
 
 # smartCCTV
 A computer vision project on creating all the key features of a smart CCTV system.
