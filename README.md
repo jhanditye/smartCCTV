@@ -42,12 +42,25 @@ Erosion works to remove isolated points whilst dilation works to fill gaps and b
 
 Although this is quite, good dilation and erosion don't allow us to capture our intuitive idea of a background. For exmaple, if someone moves into a video and then stay still, they should be eventually be considered a part of the background. Okay, now you can move to the next chapter. 
 
+The most obvious method for change detection between two frames of the same dimensions is to simply substract the RGB values of each image at each pixel. The good thing is that we have atleast one solution now so we simply to optimise it. What are its faults?
+
+The key assumption of this method which would make it work well is that the images have very small amounts of noise. This assumption is not likely to hold for general cameras and so it would be better to have a more robust method of detection. 
+
+We can attempt reduce the levels of noise with simple image morphology techniques : namely erosion and dilation here.
+
+Erosion works to remove isolated points whilst dilation works to fill gaps and bolden the outlines of images. Erosion tends to reduce the size of an object whilst dilation increase it. Performing these operations one after (referred to as closing and opening) has a good effect towards cleaning up images as it marks the outlines of shapes reasonably well and removes a large descent amount of background noise. Some good exmaples can be seen below:
+
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/78427605/207094867-230df5df-0f44-48e4-a64e-0b2f6bb6a0f4.png" alt="A connect four game in action with colours yellow and red" width="80%"/>
+</p>
+
+
+
+
+Although this is quite, good dilation and erosion don't allow us to capture our intuitive idea of a background. For exmaple, if someone moves into a video and then stay still, they should be eventually be considered a part of the background. Okay, now you can move to the next chapter. 
 
 ### :blossom: Improved change detection with Gaussian Mixture Models
-
-Given that we want to extract the difference the background and foreground 
-
-
 ### :evergreen_tree: Connected Component Analysis
 
 ## My process
