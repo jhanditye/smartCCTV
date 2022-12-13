@@ -1,8 +1,5 @@
 
-To recruiters:
-:construction_worker: This README is still under construction, so for now it might be best to look at the smartCCTV noteboook. :construction_worker:
-
-:construction: You have been warned! :construction:
+Hey, welcome to this project!
 
 ## Table of contents
 
